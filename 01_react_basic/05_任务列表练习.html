@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_任务列表练习</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- CDN引入，依赖三个包：react、react-dom、babel -->
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const taskList = [
+        {
+          id: 1,
+          name: "吃饭",
+          completed: true,
+        },
+        {
+          id: 2,
+          name: "睡觉",
+          completed: false,
+        },
+        {
+          id: 3,
+          name: "敲代码",
+          completed: false,
+        },
+      ];
+
+      const element = (
+        <div>
+          <h2>
+            当前未完成任务数:{" "}
+            {taskList.filter((item) => !item.completed).length}
+          </h2>
+          <div>
+            {taskList.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  style={{ color: item.completed ? "green" : "red" }}
+                >
+                  {item.name}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+      root.render(element);
+    </script>
+  </body>
+</html>
