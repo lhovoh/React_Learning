@@ -1,0 +1,96 @@
+/* navbar/style.css */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f8d7da; /* 背景颜色 */
+  padding: 10px 20px; /* 内边距 */
+}
+
+.header-itemone {
+  margin-right: 3vw; /* 右侧外边距 */
+  cursor: pointer; /* 鼠标悬停时的指针样式 */
+  color: #00aaff; /* 文字颜色 */
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 3vw; /* 右侧外边距 */
+  cursor: pointer; /* 鼠标悬停时的指针样式 */
+  color: #000000; /* 文字颜色 */
+  display: flex;
+  align-items: center;
+}
+
+.header-item:hover {
+  color: #0056b3; /* 鼠标悬停时的文字颜色 */
+}
+
+.header-item svg {
+  margin-right: 5px; /* 图标与文字之间的间距 */
+}
+
+.contentStyle {
+  margin: auto;
+  width: 100%;
+  height: 160px;
+  color: #fff;
+  line-height: 160px;
+  text-align: center;
+  background-color: #364d79;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f8d7da; /* 背景颜色 */
+  padding: 10px 20px; /* 内边距 */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 使项目居中显示 */
+}
+
+.gallery-item {
+  width: 300px;
+  height: 200px;
+  margin: 10px; /* 每个项目周围的间距 */
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px; /* 增加项目的圆角 */
+  overflow: hidden; /* 确保阴影不超出边界 */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px; /* 增加图像的圆角 */
+}
+
+.gallery-item2 {
+  display: flex;
+  padding: 10px 20px; /* 内边距 */
+}
+
+.gallery-image2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px; /* 增加图像的圆角 */
+}
+
+.gallery-item3 {
+  padding-left: 50px; /* 左侧外边距 */
+}
+
+.gallery-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gallery-subtitle {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666;
+}
